@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "83c75f4a-db10-4626-b3be-74c48764df40",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Information About Sale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/sales/find/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"sales",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Of Sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/sales/number-of-sales",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"sales",
+						"number-of-sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A New Sale",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/sales/create",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"sales",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

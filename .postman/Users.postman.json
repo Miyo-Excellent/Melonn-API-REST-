@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "de6a2056-8ec7-4b56-9de4-d91ccf8f5146",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Information About User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/users/find/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"users",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Of Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/users/number-of-users",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"users",
+						"number-of-users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

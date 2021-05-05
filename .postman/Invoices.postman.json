@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "5e18580f-c3b6-4c11-b279-5198794a8f84",
+		"name": "Invoices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Information About Invoice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/invoices/find/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"invoices",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Of Invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/invoices/number-of-invoices",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"invoices",
+						"number-of-invoices"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "94813b5d-43f9-4c8c-a305-715ccf57519f",
+		"name": "Shipments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Information About Shipping",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/shipments/find/2",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"shipments",
+						"find",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Information About Shipping",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/shipments/find/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"shipments",
+								"find",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "833"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"341-hsTIlLWfNeL+nog2BO7eXBJAdbo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 May 2021 05:07:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Information about shipping: Success\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Recogida @ Melonn - HOY\",\n        \"description\": \"Recogida @ Melonn - HOY\",\n        \"code\": \"MSM-PM-0001\",\n        \"shipping_type\": \"Pickup at Melonn\",\n        \"rules\": {\n            \"availability\": {\n                \"byWeight\": {\n                    \"min\": 0,\n                    \"max\": 100\n                },\n                \"byRequestTime\": {\n                    \"dayType\": \"BUSINESS\",\n                    \"fromTimeOfDay\": 0,\n                    \"toTimeOfDay\": 14\n                },\n                \"byWarehouseCoverage\": {\n                    \"type\": \"ALL\"\n                }\n            },\n            \"promisesParameters\": {\n                \"cases\": [\n                    {\n                        \"priority\": 1,\n                        \"condition\": {\n                            \"byRequestTime\": {\n                                \"dayType\": \"ANY\",\n                                \"fromTimeOfDay\": 0,\n                                \"toTimeOfDay\": 24\n                            }\n                        },\n                        \"packPromise\": {\n                            \"min\": {\n                                \"type\": \"DELTA-HOURS\",\n                                \"deltaHours\": 0\n                            },\n                            \"max\": {\n                                \"type\": \"DELTA-HOURS\",\n                                \"deltaHours\": 2\n                            }\n                        },\n                        \"shipPromise\": {\n                            \"min\": {\n                                \"type\": \"NULL\"\n                            },\n                            \"max\": {\n                                \"type\": \"NULL\"\n                            }\n                        },\n                        \"deliveryPromise\": {\n                            \"min\": {\n                                \"type\": \"NULL\"\n                            },\n                            \"max\": {\n                                \"type\": \"NULL\"\n                            }\n                        },\n                        \"readyPickUpPromise\": {\n                            \"min\": {\n                                \"type\": \"DELTA-HOURS\",\n                                \"deltaHours\": 0\n                            },\n                            \"max\": {\n                                \"type\": \"DELTA-HOURS\",\n                                \"deltaHours\": 2\n                            }\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "All Shipments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/shipments/all",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"shipments",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Shipments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/shipments/all",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"shipments",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "330"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14a-H3kg248m6VRAZOWSbcHmAhkwWT0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 May 2021 05:07:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Number of shipments: Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Recogida @ Melonn - HOY\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Recogida @ Melonn - Siguiente Dia Habil\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Domicilio - Express - Local\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Domicilio - Hoy - Local\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Domicilio - Siguiente Dia Habil - Local\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Envio Nacional\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Off Days",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/shipments/off-days",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"shipments",
+						"off-days"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Off Days",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/shipments/off-days",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"shipments",
+								"off-days"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "922"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39a-bcSfDXCw4k1fjl6Wwvz9ztuT4EQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 May 2021 05:06:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Number of shipments: Success\",\n    \"data\": [\n        \"2021-01-01\",\n        \"2021-01-11\",\n        \"2021-01-24\",\n        \"2021-01-31\",\n        \"2021-02-07\",\n        \"2021-02-14\",\n        \"2021-02-21\",\n        \"2021-02-28\",\n        \"2021-03-07\",\n        \"2021-03-14\",\n        \"2021-03-21\",\n        \"2021-03-22\",\n        \"2021-03-28\",\n        \"2021-04-01\",\n        \"2021-04-02\",\n        \"2021-04-04\",\n        \"2021-04-11\",\n        \"2021-04-18\",\n        \"2021-04-25\",\n        \"2021-05-01\",\n        \"2021-05-02\",\n        \"2021-05-09\",\n        \"2021-05-16\",\n        \"2021-05-17\",\n        \"2021-05-23\",\n        \"2021-05-30\",\n        \"2021-06-06\",\n        \"2021-06-07\",\n        \"2021-06-13\",\n        \"2021-06-14\",\n        \"2021-06-20\",\n        \"2021-06-27\",\n        \"2021-07-04\",\n        \"2021-07-05\",\n        \"2021-07-11\",\n        \"2021-07-18\",\n        \"2021-07-20\",\n        \"2021-07-25\",\n        \"2021-08-01\",\n        \"2021-08-07\",\n        \"2021-08-08\",\n        \"2021-08-15\",\n        \"2021-08-16\",\n        \"2021-08-22\",\n        \"2021-08-29\",\n        \"2021-09-05\",\n        \"2021-09-12\",\n        \"2021-09-19\",\n        \"2021-09-26\",\n        \"2021-10-03\",\n        \"2021-10-10\",\n        \"2021-10-17\",\n        \"2021-10-18\",\n        \"2021-10-24\",\n        \"2021-10-31\",\n        \"2021-11-01\",\n        \"2021-11-07\",\n        \"2021-11-14\",\n        \"2021-11-15\",\n        \"2021-11-21\",\n        \"2021-11-28\",\n        \"2021-12-05\",\n        \"2021-12-08\",\n        \"2021-12-12\",\n        \"2021-12-19\",\n        \"2021-12-25\",\n        \"2021-12-26\"\n    ]\n}"
+				}
+			]
+		}
+	]
+}

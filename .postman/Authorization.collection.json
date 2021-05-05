@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "33468ef3-5e31-443c-b53c-d1952880c340",
+		"name": "Authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"theofficesmichell@gmail.com\",\r\n    \"password\": \"0123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/auth/sign-in",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"auth",
+						"sign-in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"theofficesmichell@gmail.com\",\r\n    \"password\": \"0123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/auth/sign-in",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"auth",
+								"sign-in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "644"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"284-NJyDLbl2IRqOn8bpzY7RkSnXGzg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 May 2021 23:11:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You have successfully logged in.\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"608ddff3f0546e8738857dc3\",\n            \"name\": \"Michell\",\n            \"phoneNumber\": \"3105951890\",\n            \"lastname\": \"Excellent Marin\",\n            \"email\": \"theofficesmichell@gmail.com\",\n            \"roles\": [\n                {\n                    \"_id\": \"608ddff3f0546e8738857dc2\"\n                }\n            ]\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDhkZGZmM2YwNTQ2ZTg3Mzg4NTdkYzMiLCJuYW1lIjoiTWljaGVsbCIsInBob25lTnVtYmVyIjoiMzEwNTk1MTg5MCIsImxhc3RuYW1lIjoiRXhjZWxsZW50IE1hcmluIiwiZW1haWwiOiJ0aGVvZmZpY2VzbWljaGVsbEBnbWFpbC5jb20iLCJyb2xlcyI6W3siX2lkIjoiNjA4ZGRmZjNmMDU0NmU4NzM4ODU3ZGMyIn1dLCJpYXQiOjE2MTk5MTA2NjAsImV4cCI6MzI0MjQ5OTcyMH0.GbaFGQacBHvp7ERptRxd7U24fdR9Ahd6Tzz3jAZ397Y\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Michell\",\r\n    \"phoneNumber\": \"3105951890\",\r\n    \"lastname\": \"Excellent Marin\",\r\n    \"email\": \"theofficesmichell@gmail.com\",\r\n    \"password\": \"0123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/auth/sign-up",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"auth",
+						"sign-up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Michell\",\r\n    \"phoneNumber\": \"3105951890\",\r\n    \"lastname\": \"Excellent Marin\",\r\n    \"email\": \"theofficesmichell@gmail.com\",\r\n    \"password\": \"0123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/auth/sign-up",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"auth",
+								"sign-up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"283-Iu5OX7bhqGYhM/2Tc+FdZ/Rwvfo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 May 2021 23:10:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Information about authorization\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"608ddff3f0546e8738857dc3\",\n            \"name\": \"Michell\",\n            \"phoneNumber\": \"3105951890\",\n            \"lastname\": \"Excellent Marin\",\n            \"email\": \"theofficesmichell@gmail.com\",\n            \"roles\": [\n                {\n                    \"_id\": \"608ddff3f0546e8738857dc2\"\n                }\n            ]\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDhkZGZmM2YwNTQ2ZTg3Mzg4NTdkYzMiLCJuYW1lIjoiTWljaGVsbCIsInBob25lTnVtYmVyIjoiMzEwNTk1MTg5MCIsImxhc3RuYW1lIjoiRXhjZWxsZW50IE1hcmluIiwiZW1haWwiOiJ0aGVvZmZpY2VzbWljaGVsbEBnbWFpbC5jb20iLCJyb2xlcyI6W3siX2lkIjoiNjA4ZGRmZjNmMDU0NmU4NzM4ODU3ZGMyIn1dLCJpYXQiOjE2MTk5MTA2NDMsImV4cCI6MzI0MjQ5OTY4Nn0.PVBhvPQxPL5HxkbV5rk2fyJ-Nbg8mWeIfdpwG9gsh1I\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

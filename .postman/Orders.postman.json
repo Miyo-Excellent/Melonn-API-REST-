@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "5c76661b-33a0-46f7-a4c0-d6623a067afc",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ordering Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/orders/find/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"orders",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Of Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/orders/number-of-orders",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"orders",
+						"number-of-orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
