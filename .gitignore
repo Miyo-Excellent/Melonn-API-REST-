@@ -131,3 +131,6 @@ gen
 # Firebase
 firebase-adminsdk-key.json
 
+# environment
+.env
+
